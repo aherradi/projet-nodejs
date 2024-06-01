@@ -1,0 +1,26 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJpYXQiOjE2ODQ2MDE2MTF9.jmpH8i0m072YET3HK-RwjjwXSRJwU_1DdMwVnYCJloI
+@url = http://localhost:3000
+
+
+POST  {{url}}/users/register
+Content-Type: application/json
+
+{
+    "name": "yassin" ,
+    "username": "yassin",
+    "email": "validationtst@gmail.com",
+    "password": "12598654",
+    "confirmPassword": "12598654",
+    "about": "About me"
+}
+
+###
+
+
+POST  {{url}}/users/signin
+Content-Type: application/json
+
+{
+    "email": "validationtst@gmail.com",
+    "password": "12598654"
+}
